@@ -1,0 +1,7 @@
+{
+  "name": "product-card",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular-standalone"
+}
