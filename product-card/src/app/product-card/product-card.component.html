@@ -1,3 +1,17 @@
-<p>
-  product-card works!
-</p>
+<ion-card>
+    <div>
+        <img src="assets/icon/BIG_NEW_YORK.jpg" alt="Pizza">
+    </div>
+  <ion-card-header >
+      <ion-card-title>BIG NEW YORKER BACON & BANANA PEPPERS</ion-card-title>
+  </ion-card-header>
+  <ion-card-content>
+      <p>Es una Pizza de gran tamaño, inspirada al estilo New York con rebanadas grandes, de peperoni y trocitos de bacon, con abundante rebanadas de chile banan peppers de sabor suave con toque acido, con una mexcla de oregano y queso.</p>
+  </ion-card-content>
+  <ion-item>
+      <ion-button (click)="decreaseQuantity()">-</ion-button>
+      <ion-label>{{ quantity }}</ion-label>
+      <ion-button (click)="increaseQuantity()">+</ion-button>
+  </ion-item>
+  <ion-button expand="full" (click)="presentAlert()">Ordenar</ion-button>
+</ion-card>
